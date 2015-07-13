@@ -19,12 +19,12 @@ describe ('Game', function(){
   describe ('player selection', function() {
 
     it('can select rock', function() {
-      rps.player_selection('Rock')
+      rps.playerSelection('Rock')
       expect(rps.choice).toEqual('Rock')
     });
 
     it('fails if selection not in list of choices', function(){
-      expect(function(){rps.player_selection('banana');}).toThrow(new Error('Please select Rock, Paper or Scissors'));
+      expect(function(){rps.playerSelection('banana');}).toThrow(new Error('Please select Rock, Paper or Scissors'));
     });
 
   });
@@ -38,21 +38,73 @@ describe ('Game', function(){
 
 
     it('player selects rock, results in a draw', function() {
-      rps.player_selection('Rock');
+      rps.playerSelection('Rock');
       expect(rps.outcome()).toEqual('Draw')
     });
 
     it('player selects paper, results in a win', function() {
-      rps.player_selection('Paper');
+      rps.playerSelection('Paper');
       expect(rps.outcome()).toEqual('Win')
     });
 
     it('player selects scissors, results in a loss', function() {
-      rps.player_selection('Scissors');
+      rps.playerSelection('Scissors');
       expect(rps.outcome()).toEqual('Lose')
     });
 
+  });
+
+    
+  describe ('when computer selects paper', function(){
+
+    beforeEach(function(){
+      spyOn(Math, 'random').and.returnValue(0.5)
+
+    });
+
+
+    it('player selects rock, results in a loss', function() {
+      rps.playerSelection('Rock');
+      expect(rps.outcome()).toEqual('Lose')
+    });
+
+    it('player selects paper, results in a draw', function() {
+      rps.playerSelection('Paper');
+      expect(rps.outcome()).toEqual('Draw')
+    });
+
+    it('player selects scissors, results in a win', function() {
+      rps.playerSelection('Scissors');
+      expect(rps.outcome()).toEqual('Win')
+    });
 
   });
+
+    
+  describe ('when computer selects scissors', function(){
+
+    beforeEach(function(){
+      spyOn(Math, 'random').and.returnValue(0.9)
+
+    });
+
+
+    it('player selects rock, results in a win', function() {
+      rps.playerSelection('Rock');
+      expect(rps.outcome()).toEqual('Win')
+    });
+
+    it('player selects paper, results in a loss', function() {
+      rps.playerSelection('Paper');
+      expect(rps.outcome()).toEqual('Lose')
+    });
+
+    it('player selects scissors, results in a draw', function() {
+      rps.playerSelection('Scissors');
+      expect(rps.outcome()).toEqual('Draw')
+    });
+
+  });
+
 
 });

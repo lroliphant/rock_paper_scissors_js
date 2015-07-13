@@ -8,7 +8,7 @@ RockPaperScissors.prototype.computerChoice = function () {
   return random;
 };
 
-RockPaperScissors.prototype.player_selection = function(choice) {
+RockPaperScissors.prototype.playerSelection = function(choice) {
   if (_.contains(this.choices, choice)) {
     this.choice = choice;
   }
