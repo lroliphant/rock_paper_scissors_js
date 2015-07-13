@@ -17,9 +17,15 @@ describe ('Game', function(){
   });
 
   describe ('player selection', function() {
+    
     it('can select rock', function() {
       expect(rps.player_selection('Rock')).toEqual('Rock')
     });
+
+    it('fails if selection not in list of choices', function(){
+      expect(function(){rps.player_selection('banana');}).toThrow(new Error('Please select Rock, Paper or Scissors'));
+    });
+
   });
 
   // describe ('when computer selects rock', function(){
