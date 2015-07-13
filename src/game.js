@@ -9,12 +9,10 @@ RockPaperScissors.prototype.computerChoice = function () {
 };
 
 RockPaperScissors.prototype.playerSelection = function(choice) {
-  if (_.contains(this.choices, choice)) {
+  if (!(_.contains(this.choices, choice))) {
+    throw new Error('Please select Rock, Paper or Scissors')
+  }
     this.choice = choice;
-  }
-  else {
-    throw new Error('Please select Rock, Paper or Scissors');
-  }
 };
 
 RockPaperScissors.prototype.outcome = function () {
