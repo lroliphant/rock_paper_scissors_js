@@ -8,5 +8,10 @@ RockPaperScissors.prototype.computerChoice = function () {
 };
 
 RockPaperScissors.prototype.player_selection = function(choice) {
-  return choice;
+  if (_.contains(this.choices, choice)) {
+    return choice;
+  }
+  else {
+    throw new Error('Please select Rock, Paper or Scissors');
+  }
 };
