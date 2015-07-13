@@ -1,1 +1,2 @@
-# rps-javascript
+Recreate RPS challenge in JavaScript
+
