@@ -19,7 +19,8 @@ describe ('Game', function(){
   describe ('player selection', function() {
 
     it('can select rock', function() {
-      expect(rps.player_selection('Rock')).toEqual('Rock')
+      rps.player_selection('Rock')
+      expect(rps.choice).toEqual('Rock')
     });
 
     it('fails if selection not in list of choices', function(){
@@ -41,6 +42,15 @@ describe ('Game', function(){
       expect(rps.outcome()).toEqual('Draw')
     });
 
+    it('player selects paper, results in a win', function() {
+      rps.player_selection('Paper');
+      expect(rps.outcome()).toEqual('Win')
+    });
+
+    it('player selects scissors, results in a loss', function() {
+      rps.player_selection('Scissors');
+      expect(rps.outcome()).toEqual('Lose')
+    });
 
 
   });
