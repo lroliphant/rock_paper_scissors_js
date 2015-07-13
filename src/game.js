@@ -12,35 +12,35 @@ RockPaperScissors.prototype.playerSelection = function(choice) {
   if (!(_.contains(this.choices, choice))) {
     throw new Error('Please select Rock, Paper or Scissors')
   }
-    this.choice = choice;
+  this.choice = choice;
 };
 
 RockPaperScissors.prototype.outcome = function () {
   if (this.choice === this.computerChoice()) {
-    return 'Draw';
+    return 'Draw!';
   }
 
   if (this.choice === 'Rock' && this.computerChoice() === 'Scissors') {
-    return 'Win';
+    return 'You win!';
   }
 
   if (this.choice === 'Rock' && this.computerChoice() === 'Paper') {
-    return 'Lose';
+    return 'You loose!';
   }
 
   if (this.choice === 'Scissors' && this.computerChoice() === 'Paper') {
-    return 'Win';
+    return 'You win!';
   }
 
   if (this.choice === 'Scissors' && this.computerChoice() === 'Rock') {
-    return 'Lose';
+    return 'You loose!';
   }
 
   if (this.choice === 'Paper' && this.computerChoice() === 'Rock') {
-    return 'Win';
+    return 'You win!';
   }
 
   if (this.choice === 'Paper' && this.computerChoice() === 'Scissors') {
-    return 'Lose';
+    return 'You loose!';
   }
 };

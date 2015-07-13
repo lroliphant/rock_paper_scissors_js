@@ -39,22 +39,22 @@ describe ('Game', function(){
 
     it('player selects rock, results in a draw', function() {
       rps.playerSelection('Rock');
-      expect(rps.outcome()).toEqual('Draw')
+      expect(rps.outcome()).toEqual('Draw!')
     });
 
     it('player selects paper, results in a win', function() {
       rps.playerSelection('Paper');
-      expect(rps.outcome()).toEqual('Win')
+      expect(rps.outcome()).toEqual('You win!')
     });
 
     it('player selects scissors, results in a loss', function() {
       rps.playerSelection('Scissors');
-      expect(rps.outcome()).toEqual('Lose')
+      expect(rps.outcome()).toEqual('You loose!')
     });
 
   });
 
-    
+
   describe ('when computer selects paper', function(){
 
     beforeEach(function(){
@@ -80,7 +80,7 @@ describe ('Game', function(){
 
   });
 
-    
+
   describe ('when computer selects scissors', function(){
 
     beforeEach(function(){
