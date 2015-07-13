@@ -15,3 +15,7 @@ RockPaperScissors.prototype.player_selection = function(choice) {
     throw new Error('Please select Rock, Paper or Scissors');
   }
 };
+
+RockPaperScissors.prototype.outcome = function () {
+  return 'Draw';
+};

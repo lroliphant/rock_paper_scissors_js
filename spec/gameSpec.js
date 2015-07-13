@@ -17,7 +17,7 @@ describe ('Game', function(){
   });
 
   describe ('player selection', function() {
-    
+
     it('can select rock', function() {
       expect(rps.player_selection('Rock')).toEqual('Rock')
     });
@@ -28,8 +28,21 @@ describe ('Game', function(){
 
   });
 
-  // describe ('when computer selects rock', function(){
-  //
-  // });
+  describe ('when computer selects rock', function(){
+
+    beforeEach(function(){
+      spyOn(Math, 'random').and.returnValue(0)
+
+    });
+
+
+    it('player selects rock, results in a draw', function() {
+      rps.player_selection('Rock');
+      expect(rps.outcome()).toEqual('Draw')
+    });
+
+
+
+  });
 
 });
