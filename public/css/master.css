@@ -29,15 +29,23 @@
 .main {
   padding-top: 50px;
   height: 22%;
-  background-color: #f06060;
   position: relative;
 }
 
 .results {
-  height: 68%;
-  background-color: #f06060;
+  height: 10%%;
   font-size: 30px;
 }
+
+.counters {
+  height: 58%;
+}
+
+.counters, .results, .main {
+  background-color: #f06060;
+}
+
+
 
 .buttons img {
   width: 50px;

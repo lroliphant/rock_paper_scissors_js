@@ -21,4 +21,11 @@ $('#scissors').click(function() {
   $('#result').html(game.outcome());
 });
 
-$('#playerCount').html(game._playerWin());
+// $('#playerCount').html(game.playerWinsCount);
+
+// document.getElementById('playerCount').innerHTML = game.playerWinsCount;
+
+$('.buttons').click(function() {
+  $('#playerCount').html(game.playerWinsCount);
+  $('#compCount').html(game.computerWinsCount);
+});
