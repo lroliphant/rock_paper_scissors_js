@@ -1,6 +1,8 @@
 var RockPaperScissors = function() {
   this.choices = ['Rock', 'Paper', 'Scissors'];
-  this.choice = ''
+  this.choice = '';
+  this.playerWinsCount   = 0;
+this.computerWinsCount = 0;
 };
 
 RockPaperScissors.prototype.computerChoice = function () {
@@ -43,4 +45,44 @@ RockPaperScissors.prototype.outcome = function () {
   if (this.choice === 'Paper' && this.computerChoice() === 'Scissors') {
     return 'You loose!';
   }
+};
+
+RockPaperScissors.prototype.outcome = function () {
+  if (this.choice === this.computerChoice()) {
+    return 'Draw!';
+  }
+
+  if (this.choice === 'Rock' && this.computerChoice() === 'Scissors') {
+    return this._playerWin();
+  }
+
+  if (this.choice === 'Rock' && this.computerChoice() === 'Paper') {
+    return this._computerWin();
+  }
+
+  if (this.choice === 'Scissors' && this.computerChoice() === 'Paper') {
+    return this._playerWin();
+  }
+
+  if (this.choice === 'Scissors' && this.computerChoice() === 'Rock') {
+    return this._computerWin();
+  }
+
+  if (this.choice === 'Paper' && this.computerChoice() === 'Rock') {
+    return this._playerWin();
+  }
+
+  if (this.choice === 'Paper' && this.computerChoice() === 'Scissors') {
+    return this._computerWin();
+  }
+};
+
+RockPaperScissors.prototype._playerWin = function () {
+  this.playerWinsCount ++
+  return 'You win!'
+};
+
+RockPaperScissors.prototype._computerWin = function () {
+  this.computerWinsCount ++
+  return 'You lose!'
 };

@@ -49,7 +49,7 @@ describe ('Game', function(){
 
     it('player selects scissors, results in a loss', function() {
       rps.playerSelection('Scissors');
-      expect(rps.outcome()).toEqual('You loose!')
+      expect(rps.outcome()).toEqual('You lose!')
     });
 
   });
@@ -102,6 +102,25 @@ describe ('Game', function(){
     it('player selects scissors, results in a draw', function() {
       rps.playerSelection('Scissors');
       expect(rps.outcome()).toEqual('Draw')
+    });
+
+  });
+
+
+  describe ('counter', function(){
+
+    it('increments players win count', function(){
+      rps.playerSelection('Scissors');
+      spyOn(Math, 'random').and.returnValue(0.5); //gives paper
+      rps.outcome();
+      expect(rps.playerWinsCount).toEqual(1)
+    });
+
+    it('increments computers win count', function(){
+      rps.playerSelection('Rock');
+      spyOn(Math, 'random').and.returnValue(0.5); //gives paper
+      rps.outcome();
+      expect(rps.computerWinsCount).toEqual(1)
     });
 
   });

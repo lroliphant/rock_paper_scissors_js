@@ -1,0 +1,23 @@
+{
+  "name": "rps-js",
+  "version": "1.0.0",
+  "description": "the marketeer will be presented the choices (rock, paper and scissors) the marketeer can choose one option the game will choose a random option a winner will be declared",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.13.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lroliphant/rps-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lroliphant/rps-js/issues"
+  },
+  "homepage": "https://github.com/lroliphant/rps-js#readme"
+}
