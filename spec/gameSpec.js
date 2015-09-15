@@ -32,7 +32,7 @@ describe ('Game', function(){
 
     it('player selects rock, results in a draw', function() {
       rps.playerSelection('Rock');
-      expect(rps.outcome()).toEqual('Draw!');
+      expect(rps.outcome()).toEqual('You draw!');
     });
 
     it('player selects paper, results in a win', function() {
@@ -57,17 +57,17 @@ describe ('Game', function(){
 
     it('player selects rock, results in a loss', function() {
       rps.playerSelection('Rock');
-      expect(rps.outcome()).toEqual('Lose');
+      expect(rps.outcome()).toEqual('You lose!');
     });
 
     it('player selects paper, results in a draw', function() {
       rps.playerSelection('Paper');
-      expect(rps.outcome()).toEqual('Draw');
+      expect(rps.outcome()).toEqual('You draw!');
     });
 
     it('player selects scissors, results in a win', function() {
       rps.playerSelection('Scissors');
-      expect(rps.outcome()).toEqual('Win');
+      expect(rps.outcome()).toEqual('You win!');
     });
 
   });
@@ -81,17 +81,17 @@ describe ('Game', function(){
 
     it('player selects rock, results in a win', function() {
       rps.playerSelection('Rock');
-      expect(rps.outcome()).toEqual('Win');
+      expect(rps.outcome()).toEqual('You win!');
     });
 
     it('player selects paper, results in a loss', function() {
       rps.playerSelection('Paper');
-      expect(rps.outcome()).toEqual('Lose');
+      expect(rps.outcome()).toEqual('You lose!');
     });
 
     it('player selects scissors, results in a draw', function() {
       rps.playerSelection('Scissors');
-      expect(rps.outcome()).toEqual('Draw');
+      expect(rps.outcome()).toEqual('You draw!');
     });
 
   });

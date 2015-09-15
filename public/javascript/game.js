@@ -19,7 +19,7 @@ RockPaperScissors.prototype.playerSelection = function(choice) {
 
 RockPaperScissors.prototype.outcome = function () {
   if (this.choice === this.computerChoice()) {
-    return 'Draw!';
+    return 'You draw!';
   }
 
   if (this.choice === 'Rock' && this.computerChoice() === 'Scissors') {
@@ -27,7 +27,7 @@ RockPaperScissors.prototype.outcome = function () {
   }
 
   if (this.choice === 'Rock' && this.computerChoice() === 'Paper') {
-    return 'You loose!';
+    return 'You lose!';
   }
 
   if (this.choice === 'Scissors' && this.computerChoice() === 'Paper') {
@@ -35,7 +35,7 @@ RockPaperScissors.prototype.outcome = function () {
   }
 
   if (this.choice === 'Scissors' && this.computerChoice() === 'Rock') {
-    return 'You loose!';
+    return 'You lose!';
   }
 
   if (this.choice === 'Paper' && this.computerChoice() === 'Rock') {
@@ -43,13 +43,13 @@ RockPaperScissors.prototype.outcome = function () {
   }
 
   if (this.choice === 'Paper' && this.computerChoice() === 'Scissors') {
-    return 'You loose!';
+    return 'You lose!';
   }
 };
 
 RockPaperScissors.prototype.outcome = function () {
   if (this.choice === this.computerChoice()) {
-    return 'Draw!';
+    return 'You draw!';
   }
 
   if (this.choice === 'Rock' && this.computerChoice() === 'Scissors') {
