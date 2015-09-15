@@ -9,3 +9,10 @@ Rock beats Scissors
 Scissors beats Paper
 Paper beats Rock
 
+
+## To Run:
+
+* Clone repo to your machine
+* cd into directory
+* Run: npm install and bower install
+* Run: npm start

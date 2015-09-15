@@ -4,7 +4,7 @@ $("#rock").click(function() {
   event.preventDefault();
   game.computerChoice();
   game.playerSelection('Rock');
-  $('#result').html(game.outcome());;
+  $('#result').html(game.outcome());
 });
 
 $('#paper').click(function() {
@@ -20,10 +20,6 @@ $('#scissors').click(function() {
   game.playerSelection('Scissors');
   $('#result').html(game.outcome());
 });
-
-// $('#playerCount').html(game.playerWinsCount);
-
-// document.getElementById('playerCount').innerHTML = game.playerWinsCount;
 
 $('.buttons').click(function() {
   $('#playerCount').html(game.playerWinsCount);

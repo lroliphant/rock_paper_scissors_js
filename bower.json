@@ -1,0 +1,20 @@
+{
+  "name": "rock paper scissors in javascript",
+  "version": "0.0.0",
+  "homepage": "https://github.com/lroliphant/rps-js2",
+  "authors": [
+    "Lucy Oliphant <lucy_oliphant@yahoo.co.uk>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "underscore": "~1.8.3",
+    "jquery": "~2.1.4"
+  }
+}

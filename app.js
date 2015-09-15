@@ -1,17 +1,10 @@
 var express = require('express');
 var app = express();
 var server = require('http').createServer(app);
-
-// app.get('/', function(request, response){
-//   response.send("Rock Paper Scissors")
-// });
+var sass = require('node-sass');
 
 app.use(express.static(process.cwd() + '/public'));
-app.use(express.static(__dirname + '/views'));
-
-// app.get('/', function(request, response){
-//   response.sendfile('views/index.html')
-// });
+app.use(express.static(__dirname + '/'));
 
 app.get('/', function(req, res){
   res.sendFile('index.html');
