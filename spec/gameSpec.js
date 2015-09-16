@@ -10,7 +10,7 @@ describe ('Game', function(){
     expect(rps.choices).toEqual(['Rock','Paper','Scissors']);
   });
 
-  describe ('player selection', function() {
+  describe ('player', function() {
 
     it('can select rock', function() {
       rps.playerSelection('Rock');
