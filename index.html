@@ -3,34 +3,39 @@
   <head>
     <meta charset="utf-8">
     <title>Rock Paper Scissors</title>
-    <link rel="stylesheet" href="/css/style.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="/assets/css/style.css" media="screen" charset="utf-8">
     <script src="bower_components/underscore/underscore.js"></script>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
   </head>
   <body>
-    <div class="wrapper">
-      <div class="content">
-        <header>Rock, Paper, Scissors</header>
-        <div class="main">
-          <p>Please choose from one of the following options:</p>
-          <a href="#" id="rock" class="buttons">
-            <img src="/assets/rock-w.png" alt="rock"></a>
-          <a href="#" id="paper" class="buttons">
-            <img src="/assets/paper-w.png" alt="Paper"></a>
-          <a href="#" id="scissors" class="buttons"><img src="/assets/scissors-w.png" alt="Scissors"></a>
-        </div>
-        <div id="result" class="results">
-          &nbsp;
-        </div>
-        <div class="counters">
-          <span>Player: </span>
-          <span id="playerCount"></span><br>
-          <span>Computer: </span>
-          <span id="compCount"></span>
-        </div>
-      </div>
-    </div>
+    <!-- <div class="wrapper">-->
+        <header>
+          <h1>Rock, Paper, Scissors</h1>
+        </header>
+        <main role="main">
+          <section class="options">
+            <p>Please choose from one of the following options:</p>
+            <a href="#" id="rock" class="button">
+              <img src="/assets/imgs/rock-w.png" alt="rock"></a>
+            <a href="#" id="paper" class="button">
+              <img src="/assets/imgs/paper-w.png" alt="Paper"></a>
+            <a href="#" id="scissors" class="button">
+              <img src="/assets/imgs/scissors-w.png" alt="Scissors"></a>
+          </section>
+          <section class="results">
+            <p id="result" class="result-txt">
+              &nbsp;
+            </p>
+            <div class="score">
+              <span>Player: </span>
+              <span id="playerCount"></span><br>
+              <span>Computer: </span>
+              <span id="compCount"></span>
+            </div>
+          </section>
+        </main>
+      <!-- </div> -->
   </body>
-  <script type="text/javascript" src="/javascript/game.js"></script>
-  <script type="text/javascript" src="/javascript/interface.js"></script>
+  <script type="text/javascript" src="/assets/javascript/game.js"></script>
+  <script type="text/javascript" src="/assets/javascript/interface.js"></script>
 </html>

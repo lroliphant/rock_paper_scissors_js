@@ -7,23 +7,23 @@ var sass = require('gulp-sass');
 
 // JS hint task
 gulp.task('jshint', function() {
-  gulp.src('./public/javascript/*.js')
+  gulp.src('./assets/javascript/*.js')
     .pipe(jshint())
     .pipe(jshint.reporter('default'));
 });
 
 // Compile Our Sass
 gulp.task('sass', function() {
-  return gulp.src('./public/sass/*.sass')
+  return gulp.src('./assets/sass/*.scss')
     .pipe(sass())
-    .pipe(gulp.dest('./public/css'));
+    .pipe(gulp.dest('./assets/css'));
 });
 
 // Watch Files For Changes
 gulp.task('watch', function() {
-  gulp.watch('./public/sass/*.sass', ['sass']);
+  gulp.watch('./assets/sass/*.scss', ['sass']);
 });
 
 // // Default gulp task
-gulp.task('default', ['sass', 'watch'], function() {
+gulp.task('default', ['sass', 'watch'],  function() {
 });

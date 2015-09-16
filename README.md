@@ -16,7 +16,7 @@ a winner will be declared
 
 ## Technologies Used
 - JavaScript
-- HTML, CSS, Sass
+- HTML5, CSS3, Sass
 - Node, Express
 - Gulp
 - Jasmine

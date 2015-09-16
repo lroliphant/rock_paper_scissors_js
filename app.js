@@ -3,7 +3,7 @@ var app = express();
 var server = require('http').createServer(app);
 var sass = require('node-sass');
 
-app.use(express.static(process.cwd() + '/public'));
+app.use(express.static(process.cwd() + '/assets'));
 app.use(express.static(__dirname + '/'));
 
 app.get('/', function(req, res){
