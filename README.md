@@ -1,11 +1,17 @@
 Rock, Paper, Scissors Game
 ===========================
 
+* My implementation of a rock, paper, scissors game developed using TDD in conjunction with Javascript and Jasmine
+
+![Rock Paper Scissors](https://github.com/lroliphant/rock_paper_scissors_js/assets/imags/rps_interface.png)
+
+
 ## Synopis
-The marketeer will be presented the choices (rock, paper and scissors)
-the marketeer can choose one option
-the game will choose a random option
-a winner will be declared
+- The player will be presented with 3 choices in the form of icons - rock, paper and scissors
+- The player can choose one option
+- The game will choose a random option
+- A message will be displayed to show the player if they won, drew or lost
+- The player and computer scores for each win will be tallied and displayed
 
 
 ## Basic rules
@@ -28,3 +34,4 @@ a winner will be declared
 * cd into directory
 * Run: ```npm install``` and ```bower install```
 * Run: ```npm start```
+* Open SpecRunner.html to run the test suite
