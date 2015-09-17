@@ -2,7 +2,7 @@ Rock, Paper, Scissors Game
 ===========================
 
 * My implementation of a rock, paper, scissors game developed using TDD in conjunction with Javascript and Jasmine
-
+* To view on heroku (https://rock-paper-scissors-3559.herokuapp.com/ "click here")
 
 ![Rock Paper Scissors](https://github.com/lroliphant/rock_paper_scissors_js/blob/master/assets/imgs/rps_interface.png)
 
