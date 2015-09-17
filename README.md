@@ -3,7 +3,7 @@ Rock, Paper, Scissors Game
 
 * My implementation of a rock, paper, scissors game developed using TDD in conjunction with Javascript and Jasmine
 
-![Rock Paper Scissors](https://github.com/lroliphant/rock_paper_scissors_js/assets/imags/rps_interface.png)
+![Rock Paper Scissors](https://github.com/lroliphant/rock_paper_scissors_js/blob/master/assets/imgs/rps_interface.png)
 
 
 ## Synopis
