@@ -1,7 +1,6 @@
 var express = require('express');
 var app = express();
 var server = require('http').createServer(app);
-var sass = require('node-sass');
 
 app.use(express.static(process.cwd() + '/assets'));
 app.use(express.static(__dirname + '/'));
